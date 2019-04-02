@@ -209,7 +209,7 @@ hbs.registerHelper('showCollapse', () => {
                  <td>${asp.telefono}</td>
                  <td>${asp.email}</td>
                  <td>
-                     <button class="btn waves-effect waves-light" type="submit" name="action">
+                     <button onclick="startDeleteUser(${asp.identificacion})" class="btn waves-effect waves-light">
                          Eliminar
                      </button>
                  </td>
@@ -217,20 +217,6 @@ hbs.registerHelper('showCollapse', () => {
 
             return aspirants
         }) +
-        
-        //   <tr>
-        //     <td>Juan Pablo</td>
-        //     <td>100411381</td>
-        //     <td>3052611730</td>
-        //     <td>juanpahdz01@gmail.com</td>
-        //     <td>
-        //         <button class="btn waves-effect waves-light" type="submit" name="action">
-        //             Eliminar
-        //         </button>
-        //     </td>
-        //   </tr>
-
-        // </tbody>
         `
       </table>
         </div>
