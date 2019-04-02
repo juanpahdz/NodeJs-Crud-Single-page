@@ -29,6 +29,7 @@ app.post('/userregistration/finished', (req, res) => {
         primerNombre: req.body.primerNombre ,
         segundoNombre: req.body.segundoNombre ,
         identificacion: req.body.identificacion ,
+        telefono: req.body.telefono ,
         email: req.body.email ,
         curso: req.body.curso ,
     })
@@ -55,6 +56,13 @@ app.get('/users', (req, res) => {
 
 app.get('/courses', (req, res) => {
     res.render('courses', {})
+})
+
+app.post('/courses/updated', (req, res) => {
+    res.render('coursesUpdated', {
+        estado: req.body.estado ,
+        modalidad: req.body.modalidad ,
+    })
 })
 
 app.get('*', (req, res) => {

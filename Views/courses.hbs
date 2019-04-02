@@ -18,33 +18,7 @@
     </thead>
 
     <tbody>
-        <tr>
-            <td>1</td>
-            <td>NodeJs</td>
-            <td>20 horas</td>
-            <td>-</td>
-            <td>Virtual</td>
-            <td>$200000</td>
-            <td>Disponible</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>NodeJs</td>
-            <td>20 horas</td>
-            <td>-</td>
-            <td>Virtual</td>
-            <td>$200000</td>
-            <td>Disponible</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>NodeJs</td>
-            <td>20 horas</td>
-            <td>-</td>
-            <td>Virtual</td>
-            <td>$200000</td>
-            <td>Disponible</td>
-        </tr>
+        {{{showCourse}}}
         
     </tbody>
 </table>
@@ -52,22 +26,20 @@
 
 <h4>Actualizar estado del curso </h4>
 <div class="row">
-    <form action="">
+    <form action="/courses/updated" method="POST">
         <div class="input-field col s4">
             <select required name="modalidad" style="display: block !important;
                         border-bottom: 1px solid #505050 !important; 
                         color: #505050 !important;">
                 <option disabled selected>Selecionar curso</option>
-                <option>Nodejs</option>
-                <option>ReactJs</option>
-                <option>AngularJs</option>
+                {{{courseOptions}}}
             </select>
         </div>
         <div class="input-field col s4">
             <div class="switch">
                 <label>
                     Cerrado
-                    <input type="checkbox">
+                    <input type="checkbox" name="estado">
                     <span class="lever"></span>
                     Abierto
                 </label>

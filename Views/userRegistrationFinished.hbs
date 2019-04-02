@@ -1,11 +1,12 @@
 {{>header}}
-{{{ createUser primerNombre segundoNombre identificacion email curso }}}
+{{{ createUser primerNombre segundoNombre identificacion email curso telefono}}}
 <table>
         <thead>
           <tr>
             <th>Nombre Completo</th>
             <th>identificacion</th>
             <th>Email</th>
+            <th>telefono</th>
             <th>Nombre del curso</th>
           </tr>
         </thead>
@@ -15,6 +16,7 @@
             <td>{{primerNombre}} {{segundoNombre}}</td>
             <td>{{identificacion}}</td>
             <td>{{email}}</td>
+            <td>{{telefono}}</td>
             <td>{{curso}}</td>
           </tr>
         </tbody>
@@ -25,7 +27,7 @@
             Inscribir otro
             </button>
         </a>
-        <a href="/courses">
+        <a href="/users">
             <button style="margin-top: 20px;" class="btn waves-effect waves-light" type="submit" name="action">
                 Ver estudiantes inscritos
             </button>

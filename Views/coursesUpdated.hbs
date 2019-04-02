@@ -1,0 +1,33 @@
+{{>header}}
+
+<h1> Curso {{ modalidad }} Actualizado</h1>
+
+
+<table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nombre del curso</th>
+            <th>Intensidad</th>
+            <th>Descripcion</th>
+            <th>Modadlidad</th>
+            <th>Valor</th>
+            <th>estado</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {{{ courseUpdate modalidad estado}}}
+        </tbody>
+      </table>
+        <a href="/courseregistration">
+            <button class="btn waves-effect waves-light"  type="submit" name="action">
+            Inscribir un curso
+            </button>
+        </a>
+        <a href="/courses">
+            <button class="btn waves-effect waves-light" type="submit" name="action">
+                Ver cursos
+            </button>
+        </a>
+{{>footer}}
