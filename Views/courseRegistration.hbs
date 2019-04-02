@@ -1,0 +1,50 @@
+{{>header}}
+<h1> Inscribir Curso </h1>
+<p> En esta seccion podrás pre matricular una persona a un curso disponible en la plataforma, si no sabes de alguno y
+    estas interesado en saber más ve al inicio</p>
+
+<div class="row">
+    <form action="/courseregistration/finished" method="post" class="col s12">
+        <div class="row">
+            <div class="input-field col s6">
+                <input required id="first_name" name="nombre" type="text" class="validate">
+                <label for="first_name">Nombre del curso</label>
+            </div>
+            <div class="input-field col s6">
+                <input required id="id_course" name="id" type="number" class="validate">
+                <label for="id_course">Id del curso</label>
+            </div>
+        </div>
+        <div class="row">
+            <div required class="input-field col s6">
+                <input id="Valor" type="number" name="valor" class="validate">
+                <label for="Valor">Valor</label>
+            </div>
+            <div class="input-field col s6">
+                <input required id="intesidad" name="intensidad" type="number" class="validate">
+                <label for="intesidad">intesidad Horaria</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <input required id="Descripcion" name="descripcion" type="text" class="validate">
+                <label for="Descripcion">Descripcion</label>
+            </div>
+
+            <div class="input-field col s6">
+                <select required name="modalidad" style="display: block !important;
+                        border-bottom: 1px solid #9e9e9e !important; 
+                        color: #9e9e9e !important;">
+                    <option disabled selected>Modalidad</option>
+                    <option>Virtual</option>
+                    <option>Presencial</option>
+                </select>
+            </div>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">
+            Enviar
+        </button>
+    </form>
+</div>
+
+{{>footer}}

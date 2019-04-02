@@ -1,0 +1,82 @@
+{{>header}}
+
+<h1> Cursos Registrados </h1>
+<p> En esta seccion podrás pre matricular una persona a un curso disponible en la plataforma, si no sabes de alguno y
+    estas interesado en saber más ve al inicio</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre del curso</th>
+            <th>Intensidad</th>
+            <th>Descripcion</th>
+            <th>Modadlidad</th>
+            <th>Valor</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>NodeJs</td>
+            <td>20 horas</td>
+            <td>-</td>
+            <td>Virtual</td>
+            <td>$200000</td>
+            <td>Disponible</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>NodeJs</td>
+            <td>20 horas</td>
+            <td>-</td>
+            <td>Virtual</td>
+            <td>$200000</td>
+            <td>Disponible</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>NodeJs</td>
+            <td>20 horas</td>
+            <td>-</td>
+            <td>Virtual</td>
+            <td>$200000</td>
+            <td>Disponible</td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+<h4>Actualizar estado del curso </h4>
+<div class="row">
+    <form action="">
+        <div class="input-field col s4">
+            <select required name="modalidad" style="display: block !important;
+                        border-bottom: 1px solid #505050 !important; 
+                        color: #505050 !important;">
+                <option disabled selected>Selecionar curso</option>
+                <option>Nodejs</option>
+                <option>ReactJs</option>
+                <option>AngularJs</option>
+            </select>
+        </div>
+        <div class="input-field col s4">
+            <div class="switch">
+                <label>
+                    Cerrado
+                    <input type="checkbox">
+                    <span class="lever"></span>
+                    Abierto
+                </label>
+            </div>
+        </div>
+        <button class="input-field btn waves-effect waves-light col s4" type="submit" name="action">
+            Enviar
+        </button>
+    </form>
+</div>
+</div>
+{{>footer}}

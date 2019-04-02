@@ -1,0 +1,38 @@
+{{>header}}
+
+{{{createCourse id nombre intensidad descripcion modalidad valor}}}
+
+<table>
+        <thead>
+          <tr>
+              <th>Id</th>
+            <th>Nombre del curso</th>
+            <th>Intensidad</th>
+            <th>Descripcion</th>
+            <th>Modadlidad</th>
+            <th>Valor</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>{{id}}</td>
+            <td>{{nombre}}</td>
+            <td>{{intensidad}} horas</td>
+            <td>{{descripcion}}</td>
+            <td>{{modalidad}}</td>
+            <td>{{valor}}</td>
+          </tr>
+        </tbody>
+      </table>
+        <a href="/courseregistration">
+            <button class="btn waves-effect waves-light"  type="submit" name="action">
+            Inscribir otro
+            </button>
+        </a>
+        <a href="/courses">
+            <button class="btn waves-effect waves-light" type="submit" name="action">
+                Ver cursos
+            </button>
+        </a>
+{{>footer}}
